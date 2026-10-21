@@ -22,7 +22,7 @@ jobs:
           cp -R dist/ release/dist/
       - name: Bright Security Scan 🏁
         id: scan
-        uses: NeuraLegion/run-scan@release
+        uses: BrightSec/run-scan@release
         with:
           api_token: ${{ secrets.NEXPLOIT_TOKEN }}
           hostname: ${{ vars.HOSTNAME }}
